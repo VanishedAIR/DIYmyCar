@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="home-general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="welcome">Pick a car to get started:</h1>
+    <div class="cars">
+      <div class="toyota">
+        <div class="car-name">Toyota Camry</div>
+        <div class="car-picture">
+          <button class="car-button" onclick="showPopup('Toyota Camry')">
+            <img
+              src="../images/2019-toyota-camry-se-auto-sedan-angular-front.avif"
+              alt="Toyota Camry"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="toyota">
+        <div class="car-name">Toyota Corolla</div>
+        <div class="car-picture">
+          <button class="car-button" onclick="showPopup('Toyota Corolla')">
+            <img
+              src="../images/2019-toyota-corolla-l-sedan-angular-front.avif"
+              alt="Toyota Corolla"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="honda">
+        <div class="car-name">Honda Civic</div>
+        <div class="car-picture">
+          <button class="car-button" onclick="showPopup('Honda Civic')">
+            <img
+              src="../images/2024-honda-civic-sport-sedan-angular-front.avif"
+              alt="Honda Civic"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="honda">
+        <div class="car-name">Honda Accord</div>
+        <div class="car-picture">
+          <button class="car-button" onclick="showPopup('Honda Accord')">
+            <img
+              src="../images/image_2024-08-01_112558213-removebg-preview.png"
+              alt="Honda Accord"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="ford">
+        <div class="car-name">Ford F-150</div>
+        <div class="car-picture">
+          <button class="car-button" onclick="showPopup('Ford F-150')">
+            <img
+              src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
+              alt="Ford F-150"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2 id="popup-title"></h2>
+        <ul>
+          <a href="../repairs/oil-change.html">
+            <li>Oil Change</li>
+          </a>
+
+          <a href="../repairs/cabin-filter.html">
+            <li>Cabin Air Filter</li>
+          </a>
+
+          <a href="../repairs/windshield-wiper-replacement.html">
+            <li>Windshield Wiper Replacement</li>
+          </a>
+
+          <a href="../repairs/spark-plug.html">
+            <li>Spark Plug</li>
+          </a>
+
+          <a href="../repairs/battery-replacement.html">
+            <li>Battery Replacement</li>
+          </a>
+
+          <a href="../repairs/tire-replacement.html">
+            <li>Tire Replacement</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

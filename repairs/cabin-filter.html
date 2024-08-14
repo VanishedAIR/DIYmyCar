@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabin Air Filter Change</title>
+    <link rel="stylesheet" href="repair-general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 20px 0px 20px;
+        margin-bottom: 100px;
+      }
+
+      .information-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+      }
+
+      .warning {
+        font-weight: 900;
+        text-decoration: underline;
+        color: red;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+      .steps,
+      .when-to-replace {
+        width: 100%;
+        margin-right: 20px;
+        font-size: 30px;
+      }
+      .steps-list,
+      .when-to-replace-list {
+        list-style: decimal;
+        margin-left: 15px;
+        font-size: 19px;
+        line-height: 2.5;
+      }
+      .steps-list li {
+        margin-bottom: 20px;
+      }
+      .figures {
+        margin: 0;
+        text-align: start;
+        color: #fc4be1;
+        font-weight: 600;
+        text-decoration: underline;
+        position: relative;
+        left: 10px;
+        top: -50px;
+      }
+      .inline-figure {
+        color: #fc4be1;
+        text-decoration: underline;
+      }
+      .home-container {
+        position: absolute;
+        width: 150px;
+        top: 0;
+        left: 0;
+      }
+      .home-button,
+      .home-button a,
+      .home-button img {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .home-container:hover,
+      .home-button:hover,
+      .home-button a:hover,
+      .home-button img:hover {
+        width: 125px;
+        top: 1%;
+        left: 10px;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .resized-image {
+        width: 78%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="heading">
+      <div class="home-container">
+        <div class="home-button">
+          <a href="../home/home.html">
+            <img
+              src="../images/image_2024-08-02_122801705-removebg-preview.png"
+              alt="Home"
+            />
+          </a>
+        </div>
+      </div>
+      <h1>How to Change a Cabin Air Filter</h1>
+    </div>
+    <p class="warning">
+      Make sure you're wearing gloves and safety glasses to ensure proper
+      protection from harmful chemicals.
+    </p>
+    <div class="container">
+      <div class="information-container">
+        <div class="when-to-replace">
+          <p>How Often Should You Change Your Cabin Air Filter?</p>
+          <ol>
+            <li class="when-to-replace-list" style="list-style: circle">
+              If you notice restricted airflow from your climate control vents
+              while driving around, it's probably worth checking the filter. As
+              a rule, they should be replaced every 15,000 to 30,000 miles, or
+              they should be replaced if you notice they are dirty during an
+              inspection. If you want a precise service interval, check your
+              owner's manual or find yours
+              <a
+                href="https://www.carfax.com/blog/owners-manuals-from-every-brand"
+                target="_blank"
+                >here.</a
+              >
+            </li>
+          </ol>
+        </div>
+
+        <div class="steps">
+          <p>Steps:</p>
+          <ol class="steps-list">
+            <li>
+              Open and, oftentimes, remove the glove box to access the cabin air
+              filter. If unsure, check the
+              <a
+                href="https://www.carfax.com/blog/owners-manuals-from-every-brand"
+                target="_blank"
+                >owner's manual.</a
+              >
+              This may require a screwdriver, or simply pressing down on a tab
+              or two. (see <span class="inline-figure">Fig. 1</span> for
+              example)
+            </li>
+            <li>
+              Remove the old cabin filter and any debris. If needed, you may
+              need to vacuum the area.
+            </li>
+            <li>
+              Install the new filter. Ensure the new filter is placed in the
+              same place as the old filter. Air flow direction is usually
+              indicated by
+              <span class="emphasis">arrows ON the filter</span> (see
+              <span class="inline-figure">Fig. 2</span> for example)
+              <br />
+              &centerdot; If unsure about which filter will fit, you can find
+              the proper cabin filter
+              <a
+                href="https://www.autozone.com/filters-and-pcv/cabin-air-filter?intcmp=BLG%3ABDY%3A1%3A20221007%3A00000000%3AGEN%3Ahow+to"
+                target="_blank"
+                >here.</a
+              >
+            </li>
+            <li>
+              Finally, install the glove box back in place using the same steps
+              you did for removal. (see
+              <span class="inline-figure">Fig. 3</span> for example)
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="images">
+        <img
+          src="../images/glovebox-remove.png"
+          alt="Glove box removal"
+          class="resized-image"
+        />
+        <p class="figures">Fig. 1</p>
+        <img
+          src="../images/Screenshot 2024-08-07 102508.png"
+          alt="Airflow direction"
+        />
+        <p class="figures">Fig. 2</p>
+        <img
+          src="../images/glovebox-install.png"
+          alt="Glove box installation"
+          class="resized-image"
+        />
+        <p class="figures">Fig. 3</p>
+      </div>
+    </div>
+    <div class="source">
+      <p>
+        Source: AutoZone. (2022, October 7).
+        <a
+          href="https://www.autozone.com/diy/filters/cabin-air-filter-replacement"
+          target="_blank"
+          >How to change your cabin air filter.</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

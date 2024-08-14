@@ -1,0 +1,70 @@
+.welcome {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.car-name {
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 20px;
+  width: 98%;
+  color: white;
+}
+
+.car-picture {
+  margin: auto;
+  display: flex;
+  width: 500px;
+  padding: 10px;
+}
+
+.car-picture img {
+  width: 100%;
+}
+
+.toyota,
+.honda,
+.ford {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.popup-content {
+  padding: 20px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup .close:hover {
+  color: #fc4be1;
+}
+
+.popup .popup-content ul a:hover {
+  color: #fc4be1;
+}

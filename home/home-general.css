@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Quantico, Arial;
+  width: 100%;
+  background-color: black;
+}
+
+button {
+  background-color: black;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: lightblue;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc4be1;
+  border-radius: 2px;
+}
+
+ul {
+  padding-top: 15px;
+}
+
+ul li {
+  margin-bottom: 45px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* This will make the link color inherit the color from its parent element */
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit; /* Ensures the visited link color is the same as the normal link color */
+}
