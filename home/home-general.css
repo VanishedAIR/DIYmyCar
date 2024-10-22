@@ -2,19 +2,12 @@ body {
   margin: 0;
   font-family: Quantico, Arial;
   width: 100%;
-  background-color: black;
+  background-color: white;
 }
 
 button {
-  background-color: black;
+  background-color: white;
   border: none;
-}
-
-button:hover {
-  cursor: pointer;
-  border-radius: 1px;
-  border-style: solid;
-  border-color: lightblue;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +15,6 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
   border-radius: 2px;
 }
 

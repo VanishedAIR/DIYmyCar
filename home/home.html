@@ -16,7 +16,8 @@
   </head>
   <body>
     <h1 class="welcome">Pick a car to get started:</h1>
-    <div class="cars">
+    
+    <!--<div class="cars">
       <div class="toyota">
         <div class="car-name">Toyota Camry</div>
         <div class="car-picture">
@@ -74,6 +75,75 @@
               alt="Ford F-150"
             />
           </button>
+        </div>
+      </div>
+    </div>
+    -->
+    
+    <div class="cars-container">
+      <!-- First row with 3 cars -->
+      <div class="row row-1">
+        <div class="car toyota">
+          <div class="car-name">Toyota Camry</div>
+          <div class="car-picture">
+            <button class="car-button" onclick="showPopup('Toyota Camry')">
+              <img
+                src="../images/2019-toyota-camry-se-auto-sedan-angular-front.avif"
+                alt="Toyota Camry"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="car toyota">
+          <div class="car-name">Toyota Corolla</div>
+          <div class="car-picture">
+            <button class="car-button" onclick="showPopup('Toyota Corolla')">
+              <img
+                src="../images/2019-toyota-corolla-l-sedan-angular-front.avif"
+                alt="Toyota Corolla"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="car honda">
+          <div class="car-name">Honda Civic</div>
+          <div class="car-picture">
+            <button class="car-button" onclick="showPopup('Honda Civic')">
+              <img
+                src="../images/2024-honda-civic-sport-sedan-angular-front.avif"
+                alt="Honda Civic"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row with 2 cars -->
+      <div class="row row-2">
+        <div class="car honda">
+          <div class="car-name">Honda Accord</div>
+          <div class="car-picture">
+            <button class="car-button" onclick="showPopup('Honda Accord')">
+              <img
+                src="../images/image_2024-08-01_112558213-removebg-preview.png"
+                alt="Honda Accord"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="car ford">
+          <div class="car-name">Ford F-150</div>
+          <div class="car-picture">
+            <button class="car-button" onclick="showPopup('Ford F-150')">
+              <img
+                src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
+                alt="Ford F-150"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>
