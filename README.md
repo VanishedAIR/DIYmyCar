@@ -1,4 +1,4 @@
-[Current under work as of right now, new changes 10/21/24]
+[Currently under work as of right now, to update the CSS to make it look more professional, new changes 10/21/24]
 
 This is a user-friendly website that serves the purpose of guiding users through repairing/working on the little things that typically cost a lot if they were to go to a mechanic. 
 It provides a comprehensive step-by-step guide with pictures from various sources to help users better. This is a straightforward website that uses only HTML, CSS, and a little bit of JS. 
