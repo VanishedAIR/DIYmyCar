@@ -1,95 +1,77 @@
 body {
-  margin: 0;
   font-family: Quantico, Arial;
-  width: 100%;
-  min-height: 100vh;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  transform: translateY(8%);
-  overflow: hidden;
 }
 
-button {
-  background-color: black;
-  border: none;
-}
-
-button:hover {
-  cursor: pointer;
-  border-radius: 1px;
-  border-style: solid;
-  border-color: lightblue;
-}
-
-.welcome-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .welcome-auto-text-container {
+  margin-top: 100px;
   font-size: 50px;
 }
 
 .sticky-note-container {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
-  margin-bottom: 20px;
 }
 
 .sticky-note {
   position: relative;
+  background-color: lightblue;
+  margin-top: 75px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.sticky-note img {
-  width: 100%;
+.sticky-note-footer {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
 }
 
 .description-header,
 .description,
 .description-end,
 .start-link {
-  position: absolute;
+  position: relative;
   color: black;
-  width: 95%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
+  text-align: start;
 }
 
 .description-header {
-  top: 5%;
-  left: 50%;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
 }
 
 .description {
-  top: 24%;
-  left: 50%;
-  text-align: start;
   font-size: 17px;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .description-end {
-  top: 72%;
-  left: 50%;
   text-align: end;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .start-link {
   width: 150px;
   height: 50px;
-  bottom: 2%;
-  left: 85%;
-  text-align: end;
   display: block;
+  margin-top: 20px;
+  text-align: end;
+  float: right;
 }
 
 .start-link img {
@@ -98,14 +80,13 @@ button:hover {
   display: block;
 }
 
-.start-link:hover,
 .start-link:hover img {
   width: 130px;
   height: auto;
 }
 
 .emphasis {
-  color: #d43777;
+  color: #fc4be1;
   font-weight: bold;
 }
 
@@ -113,7 +94,10 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  background-color: lightblue;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -127,17 +111,14 @@ button:hover {
 
 .links-container .mail,
 .mail-link {
-  width: 105px;
+  width: 67px;
   border-radius: 50%;
 }
 
 .copyright-notice {
   max-width: 600px;
   text-align: start;
-  margin-top: 110px;
-}
-
-.copyright-notice p {
-  margin: auto;
+  align-items: end;
+  margin-top: 75px;
   font-size: 10px;
 }
