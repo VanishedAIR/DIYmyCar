@@ -1,5 +1,5 @@
 body {
-  font-family: Quantico, Arial;
+  font-family: "Poppins";
   background-color: white;
   color: black;
   display: flex;
@@ -9,11 +9,45 @@ body {
   position: relative;
 }
 
+body div {
+  line-height: 1.5; /* Adds space between sentences */
+  word-spacing: 0.5px; /* Adds space between words */
+}
 
 .welcome-auto-text-container {
-  margin-top: 100px;
+  margin-top: 95px;
   font-size: 50px;
+  font-weight: bold;
 }
+
+.welcome-auto-text-container p {
+  margin-inline: auto;
+  overflow: hidden;
+
+  /*keep on single line*/
+  white-space: nowrap;
+  /* the cursor */
+  border-right: 1px solid;
+  animation: typing 3.5s steps(35) forwards,
+  blink 1s step-end infinite
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 .sticky-note-container {
   width: 100%;
@@ -23,7 +57,7 @@ body {
 .sticky-note {
   position: relative;
   background-color: lightblue;
-  margin-top: 75px;
+  margin-top: 63px;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -68,20 +102,23 @@ body {
 .start-link {
   width: 150px;
   height: 50px;
-  display: block;
   margin-top: 20px;
   text-align: end;
   float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .start-link img {
   width: 100%;
   height: 100%;
-  display: block;
 }
 
 .start-link:hover img {
-  width: 130px;
+  width: 125px;
   height: auto;
 }
 
@@ -119,6 +156,15 @@ body {
   max-width: 600px;
   text-align: start;
   align-items: end;
-  margin-top: 75px;
+  margin-top: 60px;
   font-size: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc4be1;
+  border-radius: 2px;
 }
