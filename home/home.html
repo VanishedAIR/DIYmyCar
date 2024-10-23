@@ -7,142 +7,66 @@
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="home-general.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1 class="welcome">Pick a car to get started:</h1>
     
-    <!--<div class="cars">
-      <div class="toyota">
-        <div class="car-name">Toyota Camry</div>
-        <div class="car-picture">
-          <button class="car-button" onclick="showPopup('Toyota Camry')">
+    <div class="cars-container">
+      <!-- First row with 3 cars -->
+      <div class="row row-1">
+        <div class="car" data-car-name="Toyota Camry">
+          <div class="car-name">Toyota Camry</div>
+          <div class="car-picture">
             <img
               src="../images/2019-toyota-camry-se-auto-sedan-angular-front.avif"
               alt="Toyota Camry"
             />
-          </button>
+          </div>
         </div>
-      </div>
 
-      <div class="toyota">
-        <div class="car-name">Toyota Corolla</div>
-        <div class="car-picture">
-          <button class="car-button" onclick="showPopup('Toyota Corolla')">
+        <div class="car" data-car-name="Toyota Corolla">
+          <div class="car-name">Toyota Corolla</div>
+          <div class="car-picture">
             <img
               src="../images/2019-toyota-corolla-l-sedan-angular-front.avif"
               alt="Toyota Corolla"
             />
-          </button>
+          </div>
         </div>
-      </div>
 
-      <div class="honda">
-        <div class="car-name">Honda Civic</div>
-        <div class="car-picture">
-          <button class="car-button" onclick="showPopup('Honda Civic')">
+        <div class="car" data-car-name="Honda Civic">
+          <div class="car-name">Honda Civic</div>
+          <div class="car-picture">
             <img
               src="../images/2024-honda-civic-sport-sedan-angular-front.avif"
               alt="Honda Civic"
             />
-          </button>
-        </div>
-      </div>
-
-      <div class="honda">
-        <div class="car-name">Honda Accord</div>
-        <div class="car-picture">
-          <button class="car-button" onclick="showPopup('Honda Accord')">
-            <img
-              src="../images/image_2024-08-01_112558213-removebg-preview.png"
-              alt="Honda Accord"
-            />
-          </button>
-        </div>
-      </div>
-
-      <div class="ford">
-        <div class="car-name">Ford F-150</div>
-        <div class="car-picture">
-          <button class="car-button" onclick="showPopup('Ford F-150')">
-            <img
-              src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
-              alt="Ford F-150"
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-    -->
-    
-    <div class="cars-container">
-      <!-- First row with 3 cars -->
-      <div class="row row-1">
-        <div class="car toyota">
-          <div class="car-name">Toyota Camry</div>
-          <div class="car-picture">
-            <button class="car-button" onclick="showPopup('Toyota Camry')">
-              <img
-                src="../images/2019-toyota-camry-se-auto-sedan-angular-front.avif"
-                alt="Toyota Camry"
-              />
-            </button>
-          </div>
-        </div>
-
-        <div class="car toyota">
-          <div class="car-name">Toyota Corolla</div>
-          <div class="car-picture">
-            <button class="car-button" onclick="showPopup('Toyota Corolla')">
-              <img
-                src="../images/2019-toyota-corolla-l-sedan-angular-front.avif"
-                alt="Toyota Corolla"
-              />
-            </button>
-          </div>
-        </div>
-
-        <div class="car honda">
-          <div class="car-name">Honda Civic</div>
-          <div class="car-picture">
-            <button class="car-button" onclick="showPopup('Honda Civic')">
-              <img
-                src="../images/2024-honda-civic-sport-sedan-angular-front.avif"
-                alt="Honda Civic"
-              />
-            </button>
           </div>
         </div>
       </div>
 
       <!-- Second row with 2 cars -->
       <div class="row row-2">
-        <div class="car honda">
+        <div class="car" data-car-name="Honda Accord">
           <div class="car-name">Honda Accord</div>
           <div class="car-picture">
-            <button class="car-button" onclick="showPopup('Honda Accord')">
-              <img
-                src="../images/image_2024-08-01_112558213-removebg-preview.png"
-                alt="Honda Accord"
-              />
-            </button>
+            <img
+              src="../images/image_2024-08-01_112558213-removebg-preview.png"
+              alt="Honda Accord"
+            />
           </div>
         </div>
 
-        <div class="car ford">
+        <div class="car" data-car-name="Ford F-150">
           <div class="car-name">Ford F-150</div>
           <div class="car-picture">
-            <button class="car-button" onclick="showPopup('Ford F-150')">
-              <img
-                src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
-                alt="Ford F-150"
-              />
-            </button>
+            <img
+              src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
+              alt="Ford F-150"
+            />
           </div>
         </div>
       </div>

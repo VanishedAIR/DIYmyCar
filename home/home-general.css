@@ -1,8 +1,13 @@
 body {
   margin: 0;
-  font-family: Quantico, Arial;
+  font-family: "Poppins";
   width: 100%;
   background-color: white;
+}
+
+body div {
+  line-height: 1.5; /* Adds space between sentences */
+  word-spacing: 0.5px; /* Adds space between words */
 }
 
 button {
@@ -11,7 +16,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {

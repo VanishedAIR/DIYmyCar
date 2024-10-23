@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* First row with 3 cars */
@@ -29,35 +30,50 @@
   width: 80%;
 }
 
+/* Car card styling */
 .car {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 500px;
+  cursor: pointer; /* Make the whole card clickable */
+  text-decoration: none;
+  color: inherit; /* Preserve the default text color */
 }
 
+/* Hover effect for the car card */
+.car:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 12px #fc4be1; /* More shadow on hover for emphasis */
+}
+
+/* Car name styling */
 .car-name {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 10px;
   text-align: center;
 }
 
+/* Image container */
 .car-picture {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
+/* Car image size */
 .car-picture img {
-  max-width: 100%;
-  width: 450px; /* Adjust this as needed */
-  border: 2px solid transparent; /* Add a transparent border by default */
-  transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+  width: 450px;
+  border-radius: 8px;
 }
 
-.car-picture img:hover {
-  border-color: #fc4be1; /* Set the desired border color on hover */
-}
-
+/* Popup */
 .popup {
   display: none;
   position: fixed;
@@ -73,51 +89,6 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
-
-/*
-.car-name {
-  font-weight: bold;
-  font-size: 25px;
-  padding-left: 20px;
-  width: 98%;
-  color: black;
-}
-
-.car-picture {
-  margin: auto;
-  display: flex;
-  width: 500px;
-  padding: 10px;
-}
-
-.car-picture img {
-  width: 100%;
-}
-
-.toyota,
-.honda,
-.ford {
-  width: 100%;
-}
-
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  background-color: white;
-  color: black;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  overflow-y: auto;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-*/
 
 .popup-content {
   padding: 20px;
