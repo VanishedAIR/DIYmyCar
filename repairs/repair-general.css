@@ -1,7 +1,7 @@
 body {
-  font-family: "Quantico", sans-serif;
-  background-color: black; /*#202020*/
-  color: white; /*#f5f5f5*/
+  font-family: "Poppins";
+  background-color: white; /*#202020*/
+  color: black; /*#f5f5f5*/
   line-height: 2;
   margin: 0;
   padding: 0;
@@ -18,11 +18,10 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
   border-radius: 2px;
 }
 
