@@ -14,10 +14,27 @@ body div {
   word-spacing: 0.5px; /* Adds space between words */
 }
 
+.welcome-container {
+  display: flex;
+  max-width: 600px;
+}
+
 .welcome-auto-text-container {
-  margin-top: 95px;
+  position: relative;
+  margin-top: 75px;
   font-size: 50px;
   font-weight: bold;
+}
+
+/* Responsive font size for welcome text */
+@media (max-width: 768px) {
+  .welcome-container {
+    max-width: 100%;
+  }
+
+  .welcome-auto-text-container {
+    font-size: 6.5vw; /* Scales with viewport width on smaller screens */
+  }
 }
 
 .welcome-auto-text-container p {
@@ -48,8 +65,8 @@ body div {
   }
 }
 
-
 .sticky-note-container {
+  display: flex;
   width: 100%;
   max-width: 600px;
 }
@@ -57,7 +74,7 @@ body div {
 .sticky-note {
   position: relative;
   background-color: lightblue;
-  margin-top: 63px;
+  margin-top: 55px;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -65,7 +82,7 @@ body div {
 }
 
 .sticky-note-footer {
-  display: flex;
+  position: relative;
   justify-content: flex-end; /* Aligns the button to the right */
 }
 
@@ -127,12 +144,25 @@ body div {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .description-header {
+    font-size: 3vw;
+  }
+
+  .description { 
+    font-size: 2vw;
+  }
+  .description-end {
+    font-size: 2vw;
+  }
+}
+
 .links-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: lightblue;
-  margin-top: 50px;
+  margin-top: 45px;
   border-radius: 10px;
   width: 100%;
   max-width: 600px;
@@ -140,6 +170,10 @@ body div {
 
 .links-container img {
   width: 85px;
+}
+
+.links-container img:hover {
+  transform: scale(1.1); /* Slightly enlarges icons on hover */
 }
 
 .links-container .github {
@@ -152,11 +186,15 @@ body div {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  
+}
+
 .copyright-notice {
   max-width: 600px;
   text-align: start;
   align-items: end;
-  margin-top: 60px;
+  margin-top: 43px;
   font-size: 10px;
 }
 
