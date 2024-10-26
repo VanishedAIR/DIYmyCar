@@ -5,7 +5,7 @@
   color: black;
 }
 
-/* Container for both rows */
+/* Container for all rows */
 .cars-container {
   display: flex;
   flex-direction: column;
@@ -14,20 +14,13 @@
   margin-bottom: 100px;
 }
 
-/* First row with 3 cars */
-.row-1 {
+/* Row styling */
+.row {
   display: flex;
-  justify-content: space-between;
-  width: 85%;
-}
-
-/* Second row with 2 cars, centered below the first row */
-.row-2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-  gap: 150px; /* Adjust this gap for fine-tuning the spacing */
-  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 30px 0px;
 }
 
 /* Car card styling */
@@ -41,16 +34,18 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  max-width: 500px;
-  cursor: pointer; /* Make the whole card clickable */
+  max-width: 450px;
+  width: 100%; /* Three items per row above 1480px */
+  cursor: pointer;
   text-decoration: none;
-  color: inherit; /* Preserve the default text color */
+  color: inherit;
+  margin-bottom: 25px;
 }
 
 /* Hover effect for the car card */
 .car:hover {
-  transform: scale(1.05); /* Slightly enlarge the card on hover */
-  box-shadow: 0 6px 12px #fc4be1; /* More shadow on hover for emphasis */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #fc4be1;
 }
 
 /* Car name styling */
@@ -69,7 +64,8 @@
 
 /* Car image size */
 .car-picture img {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   border-radius: 8px;
 }
 
@@ -108,4 +104,84 @@
 
 .popup .popup-content ul a:hover {
   color: #fc4be1;
+}
+
+/* Media Queries */
+
+/* Two items per row at 1480px */
+@media (max-width: 1480px) {
+  .row {
+    justify-content: space-around;
+  }
+
+  .car {
+    width: 45%; /* Adjusts to fit two items per row */
+  }
+
+  .car-name {
+    font-size: 22px;
+  }
+}
+
+/* Stacking layout at 1000px */
+@media (max-width: 1000px) {
+  .cars-container {
+    margin-top: 60px;
+  }
+
+  .welcome {
+    font-size: 5vw;
+    margin: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .car {
+    width: 90%; /* Full width for a single column */
+    margin-bottom: 25px;
+  }
+
+  .car-picture img {
+    max-width: 100%;
+  }
+
+  .car-name {
+    font-size: 18px;
+  }
+}
+
+
+/* Stacking layout at 768px */
+@media (max-width: 768px) {
+  
+  .cars-container {
+    margin-top: 50px;
+  }
+  
+  .welcome {
+    font-size: 4.5vw;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .car {
+    width: 90%; /* Full width for a single column */
+    margin-bottom: 25px;
+  }
+
+  .car-picture img {
+    max-width: 100%;
+  }
+
+  .car-name {
+    font-size: 16px;
+  }
 }
