@@ -5,101 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oil Change</title>
     <link rel="stylesheet" href="repair-general.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px 20px 0px 20px;
-        margin-bottom: 100px;
-      }
-
-      .information-container {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-      }
-
-      .images {
-        width: 35%;
-        margin-top: 1230px;
-      }
-
-      .warning {
-        font-weight: 900;
-        text-decoration: underline;
-        color: red;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
-      }
-      .steps,
-      .when-to-replace,
-      .tools-needed {
-        width: 100%;
-        margin-right: 20px;
-        font-size: 30px;
-      }
-      .steps-list,
-      .when-to-replace-list,
-      .tools-needed-list {
-        list-style: decimal;
-        margin-left: 15px;
-        font-size: 19px;
-        line-height: 2.5;
-      }
-      .steps-list li {
-        margin-bottom: 35px;
-      }
-      .figures {
-        margin: 0;
-        text-align: start;
-        color: #fc4be1;
-        font-weight: 1000;
-        text-decoration: underline;
-        position: relative;
-        left: 10px;
-        top: -50px;
-      }
-      .inline-figure {
-        color: #fc4be1;
-        text-decoration: underline;
-      }
-      .home-container {
-        position: absolute;
-        width: 150px;
-        top: 0;
-        left: 0;
-      }
-      .home-button,
-      .home-button a,
-      .home-button img {
-        width: 100%;
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-      .home-container:hover,
-      .home-button:hover,
-      .home-button a:hover,
-      .home-button img:hover {
-        width: 125px;
-        top: 1%;
-        left: 10px;
-      }
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-
-      .emphasis {
-        color: #d43777;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" href="repair-styles/oil-change.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning"
+    />
   </head>
 
   <body>
@@ -116,30 +32,35 @@
       </div>
       <h1>How to Perform an Oil Change</h1>
     </div>
-    <p class="warning">
-      Make sure you're wearing gloves and safety glasses to ensure proper
-      protection from harmful chemicals.
-    </p>
+    <div class="warning">
+      <span class="material-symbols-outlined">warning</span>
+      <p class="warning-text">
+        Make sure you're wearing gloves and safety glasses to ensure proper
+        protection from harmful chemicals.
+      </p>
+    </div>
+
     <div class="container">
       <div class="information-container">
-        <div class="when-to-replace">
-          <p>How often should I change my vehicle's oil?</p>
-          <ol>
-            <li class="when-to-replace-list" style="list-style: circle">
-              Vehicle manufacturers typically set oil-change increments based on
-              the recommended oil type. You'll see 3000-5000 miles listed for
-              older vehicles, while some newer, synthetic-only cars are rated
-              for oil changes up to 15,000 miles. If you want a precise service
-              interval, check your owner's manual or find yours
-              <a
-                href="https://www.carfax.com/blog/owners-manuals-from-every-brand"
-                target="_blank"
-                >here.</a
-              >
-            </li>
-          </ol>
+        <div class="when-to-replace-container">
+          <div class="when-to-replace">
+            <p>How often should I change my vehicle's oil?</p>
+            <ol>
+              <li class="when-to-replace-list" style="list-style: circle">
+                Vehicle manufacturers typically set oil-change increments based
+                on the recommended oil type. You'll see 3000-5000 miles listed
+                for older vehicles, while some newer, synthetic-only cars are
+                rated for oil changes up to 15,000 miles. If you want a precise
+                service interval, check your owner's manual or find yours
+                <a
+                  href="https://www.carfax.com/blog/owners-manuals-from-every-brand"
+                  target="_blank"
+                  >here.</a
+                >
+              </li>
+            </ol>
+          </div>
         </div>
-
         <div class="tools-needed">
           <p>You may need most, if not all, of the following things:</p>
           <p class="tools-needed-list">
@@ -453,33 +374,32 @@
           </ol>
         </div>
       </div>
-
-      <div class="images">
-        <img
-          src="../images/Engin-Oil-Viscosity-Classification-1-2048x1152.webp"
-          alt="Oil Viscosity"
-        />
-        <p class="figures">Fig. 1</p>
-        <img
-          src="../images/SC-210107-212048-CUST-Conventional-vs-Synthetic-Oil-MKTG-Blog_WP_1440x962.webp"
-          alt="Conventional vs Synthetic Oil"
-        />
-        <p class="figures">Fig. 2</p>
-        <img src="../images/DIY20step11.webp" alt="Oil filter location" />
-        <p class="figures">Fig. 3</p>
-        <img src="../images/oil_filler_cap.jpg" alt="Oil filter location" />
-        <p class="figures">Fig. 4</p>
-        <img
-          src="../images/dipstick-check-oil_extra_large.jpeg"
-          alt="Oil filter location"
-        />
-        <p class="figures">Fig. 5</p>
-        <img
-          src="../images/how-to-read-oil-level-on-a-dipstick.webp"
-          alt="Oil filter location"
-        />
-        <p class="figures">Fig. 6</p>
-      </div>
+    </div>
+    <div class="images">
+      <img
+        src="../images/Engin-Oil-Viscosity-Classification-1-2048x1152.webp"
+        alt="Oil Viscosity"
+      />
+      <p class="figures">Fig. 1</p>
+      <img
+        src="../images/SC-210107-212048-CUST-Conventional-vs-Synthetic-Oil-MKTG-Blog_WP_1440x962.webp"
+        alt="Conventional vs Synthetic Oil"
+      />
+      <p class="figures">Fig. 2</p>
+      <img src="../images/DIY20step11.webp" alt="Oil filter location" />
+      <p class="figures">Fig. 3</p>
+      <img src="../images/oil_filler_cap.jpg" alt="Oil filter location" />
+      <p class="figures">Fig. 4</p>
+      <img
+        src="../images/dipstick-check-oil_extra_large.jpeg"
+        alt="Oil filter location"
+      />
+      <p class="figures">Fig. 5</p>
+      <img
+        src="../images/how-to-read-oil-level-on-a-dipstick.webp"
+        alt="Oil filter location"
+      />
+      <p class="figures">Fig. 6</p>
     </div>
     <div class="source">
       <p>
