@@ -1,19 +1,32 @@
-This is a user-friendly website that serves the purpose of guiding users through repairing/working on the little things that typically cost a lot if they were to go to a mechanic. 
-It provides a comprehensive step-by-step guide with pictures from various sources to help users better. This is a straightforward website that uses only HTML, CSS, and a little bit of JS. 
-I built this website on my own after learning all 3 languages from YouTube.
+# DIY Car Repair Guide
 
-Improvements are possible, such as reducing HTML complexity or enhancing the visual appeal for a cleaner look.
+This is a user-friendly website designed to guide users through minor car repairs and maintenance tasks. These small fixes can save significant costs compared to visiting a mechanic. The website provides comprehensive, step-by-step guides with pictures sourced from various creators to enhance understanding and usability.
 
-This site is for **personal use only**. Content is sourced from various creators with **attribution provided**. If you have any concerns about the content, please contact the **original creators.**
+## Technologies Used
+The website is built using:
+- **HTML**
+- **CSS**
+- **JavaScript**
 
+I developed this website independently after learning these technologies through YouTube tutorials.
 
-**Updates:**
-	**1/15/24:**
-		- Part 1 of the changes includes:
-		  - a new navbar with a search feature (underworks),
-		  - the whole website follows the theme of white/pink,
-		  - Warning is no longer just plain text but rather a popup style,
-		  - Probably going to add sections of information with supporting images instead of just big blocks of text.
-		
-	**10/21/24:**
-		- Currently under work as of right now, to update the CSS to make it look more professional
+## Future Improvements
+While the website is functional, there are areas for improvement:
+- Reducing HTML complexity for better maintainability.
+- Enhancing the visual design for a cleaner and more professional look.
+
+## Usage Policy
+This site is intended for **personal use only**. Content is sourced from various creators, with proper **attribution provided**. If you have concerns about specific content, please reach out to the **original creators**.
+
+## Updates
+### 1/15/24
+- Introduced a new navbar with a search feature (currently under development).
+- Updated the theme to a white and pink color scheme.
+- Converted the warning message from plain text to a popup style.
+- Planned improvements to divide large text blocks into sections with supporting images.
+
+### 10/21/24
+- Began updating the CSS to achieve a more professional look (work in progress).
+
+---
+Feel free to explore the site and provide feedback for further enhancements!
