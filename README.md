@@ -29,4 +29,4 @@ This site is intended for **personal use only**. Content is sourced from various
 - Began updating the CSS to achieve a more professional look (work in progress).
 
 ---
-Feel free to explore the site and provide feedback for further enhancements!
+Feel free to explore the site and provide feedback for further improvements!
