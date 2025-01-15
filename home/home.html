@@ -12,6 +12,37 @@
     />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo">
+          <a href="#">
+            <img
+              class="logo-img"
+              src="../images/DIYmyCar-Logo.png"
+              draggable="false"
+              alt="DIYmyCar Logo"
+            />
+          </a>
+        </div>
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Search For Your Car" />
+            <button class="search-logo">
+              <img
+                src="../images/search-bar.svg"
+                draggable="false"
+                alt="Search Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="nav-links">
+          <div class="home"><a href="home.html">Home</a></div>
+          <div class="about"><a href="../main/main.html">About</a></div>
+        </div>
+      </div>
+    </nav>
+
     <h1 class="welcome">Pick a car to get started:</h1>
 
     <div class="cars-container">
@@ -22,6 +53,7 @@
             <img
               src="../images/2019-toyota-camry-se-auto-sedan-angular-front.avif"
               alt="Toyota Camry"
+              draggable="false"
             />
           </div>
         </div>
@@ -32,6 +64,7 @@
             <img
               src="../images/2019-toyota-corolla-l-sedan-angular-front.avif"
               alt="Toyota Corolla"
+              draggable="false"
             />
           </div>
         </div>
@@ -42,6 +75,7 @@
             <img
               src="../images/2024-honda-civic-sport-sedan-angular-front.avif"
               alt="Honda Civic"
+              draggable="false"
             />
           </div>
         </div>
@@ -52,6 +86,7 @@
             <img
               src="../images/image_2024-08-01_112558213-removebg-preview.png"
               alt="Honda Accord"
+              draggable="false"
             />
           </div>
         </div>
@@ -62,6 +97,7 @@
             <img
               src="../images/pickup-truck-ford-motor-company-car-2015-ford-f-150-king-ranch-look-removebg-preview.png"
               alt="Ford F-150"
+              draggable="false"
             />
           </div>
         </div>
@@ -73,12 +109,20 @@
         <span class="close" onclick="hidePopup()">&times;</span>
         <h2 id="popup-title"></h2>
         <ul>
-          <a href="../repairs/oil-change.html"><li>Oil Change</li></a>
+          <a href="../repairs/oil-change/oil-change.html"
+            ><li>Oil Change</li></a
+          >
           <a href="../repairs/cabin-filter.html"><li>Cabin Air Filter</li></a>
-          <a href="../repairs/windshield-wiper-replacement.html"><li>Windshield Wiper Replacement</li></a>
+          <a href="../repairs/windshield-wiper-replacement.html"
+            ><li>Windshield Wiper Replacement</li></a
+          >
           <a href="../repairs/spark-plug.html"><li>Spark Plug</li></a>
-          <a href="../repairs/battery-replacement.html"><li>Battery Replacement</li></a>
-          <a href="../repairs/tire-replacement.html"><li>Tire Replacement</li></a>
+          <a href="../repairs/battery-replacement.html"
+            ><li>Battery Replacement</li></a
+          >
+          <a href="../repairs/tire-replacement.html"
+            ><li>Tire Replacement</li></a
+          >
         </ul>
       </div>
     </div>

@@ -1,0 +1,214 @@
+html:
+
+  with searchbar:
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo">
+          <a href="#">
+            <img
+              class="logo-img"
+              src="../images/DIYmyCar-Logo.png"
+              draggable="false"
+              alt="DIYmyCar Logo"
+            />
+          </a>
+        </div>
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Search For Your Car" />
+            <button class="search-logo">
+              <img
+                src="../images/search-bar.svg"
+                draggable="false"
+                alt="Search Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="nav-links">
+          <div class="home"><a href="home.html">Home</a></div>
+          <div class="about"><a href="../main/main.html">About</a></div>
+        </div>
+      </div>
+    </nav>
+  
+  without:
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo">
+          <a href="#">
+            <img
+              class="logo-img"
+              src="../../images/DIYmyCar-Logo.png"
+              draggable="false"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <div class="home"><a href="../../home/home.html">Home</a></div>
+          <div class="about"><a href="../../main/main.html">About</a></div>
+        </div>
+      </div>
+    </nav>
+
+
+
+css:
+
+  with search:
+    * {
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+
+    .navbar {
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Adjusted to keep logo on left and links on right */
+      width: 100%; /* Ensure the navdiv takes full width */
+    }
+
+    .logo {
+      width: 140px; /* Fixed size for the logo */
+      height: 70px; /* Adjusted height for better proportions */
+      overflow: hidden; /* Ensure child elements respect the border radius */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      border-radius: 10%; /* Apply border rounding */
+    }
+
+    .logo-img {
+      width: 140px; /* Ensure the image fits the container's width */
+      height: 50%; /* Ensure the image fits the container's height */
+      object-fit: cover; /* Ensure the image scales proportionally without distortion */
+    }
+
+    .search input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc; /* Default border color */
+      width: 400px; /* Input width */
+      margin-left: 20px; /* Space between search bar and other elements */
+      text-align: center; /* Center the placeholder text */
+      font-size: 18px; /* Adjust font size for better readability */
+      outline: none; /* Remove default blue focus outline */
+      transition: border-color 0.3s ease; /* Smooth transition for border color */
+      border-radius: 15px;
+    }
+
+    .search input:focus {
+      border: 2.5px solid #fc4be1;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px; /* Adds space between the nav links */
+    }
+
+    .navdiv a {
+      color: #000;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    .navdiv a:hover {
+      color: #fc4be1; /* Pink hover color */
+    }
+
+    @media (max-width: 768px) {
+      .navdiv {
+        justify-content: center;
+      }
+
+      .logo-img {
+        width: 120px; /* Slightly reduce logo size on smaller screens */
+      }
+
+      .search input {
+        width: 100px; /* Smaller search input */
+      }
+
+      .navdiv div {
+        margin: 5px 0; /* Adjust margin for better spacing */
+      }
+
+      .navdiv a {
+        font-size: 14px; /* Reduce font size for smaller screens */
+      }
+    }
+
+  without:
+    * {
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Adjusted to keep logo on left and links on right */
+      width: 100%; /* Ensure the navdiv takes full width */
+    }
+
+    .logo {
+      width: 140px; /* Fixed size for the logo */
+      height: 70px; /* Adjusted height for better proportions */
+      overflow: hidden; /* Ensure child elements respect the border radius */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      border-radius: 10%; /* Apply border rounding */
+    }
+
+    .logo-img {
+      width: 140px; /* Ensure the image fits the container's width */
+      height: 50%; /* Ensure the image fits the container's height */
+      object-fit: cover; /* Ensure the image scales proportionally without distortion */
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px; /* Adds space between the nav links */
+    }
+
+    .navdiv a {
+      color: #000;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    .navdiv a:hover {
+      color: #fc4be1; /* Pink hover color */
+    }
+
+    @media (max-width: 768px) {
+      .navdiv {
+        justify-content: center;
+      }
+
+      .logo-img {
+        width: 120px; /* Slightly reduce logo size on smaller screens */
+      }
+
+      .navdiv div {
+        margin: 5px 0; /* Adjust margin for better spacing */
+      }
+
+      .navdiv a {
+        font-size: 14px; /* Reduce font size for smaller screens */
+      }
+    }

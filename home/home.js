@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const carCards = document.querySelectorAll(".car");
 
   carCards.forEach(card => {
-    card.addEventListener("click", () => {
-      const carName = card.getAttribute("data-car-name");
-      showPopup(carName);
-    });
+    card.addEventListener("click", handleCardClick);
   });
 });
+
+function handleCardClick(event) {
+  const carName = event.currentTarget.getAttribute("data-car-name");
+  showPopup(carName);
+}
 
 function showPopup(carName) {
   const popup = document.getElementById("popup");

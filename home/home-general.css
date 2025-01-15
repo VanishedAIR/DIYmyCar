@@ -6,8 +6,8 @@ body {
 }
 
 body div {
-  line-height: 1.5; /* Adds space between sentences */
-  word-spacing: 0.5px; /* Adds space between words */
+  line-height: 1.5;
+  word-spacing: 0.5px;
 }
 
 button {
@@ -39,10 +39,10 @@ ul li {
 
 a {
   text-decoration: none;
-  color: inherit; /* This will make the link color inherit the color from its parent element */
+  color: inherit;
   cursor: pointer;
 }
 
 a:visited {
-  color: inherit; /* Ensures the visited link color is the same as the normal link color */
+  color: inherit;
 }
