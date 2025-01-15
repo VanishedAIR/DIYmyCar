@@ -8,7 +8,7 @@ The website is built using:
 - **CSS**
 - **JavaScript**
 
-I developed this website independently after learning these technologies through YouTube tutorials.
+I developed this website independently after learning these technologies through YouTube tutorials and experimenting with the techonologies.
 
 ## Future Improvements
 While the website is functional, there are areas for improvement:
